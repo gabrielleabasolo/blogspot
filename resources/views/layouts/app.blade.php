@@ -6,12 +6,18 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>Document</title>
 </head>
-<body class="bg bg-gray-200">
-    <nav class="bg-white flex justify-between">
-        <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+<body class="bg bg-gray-300">
+    <nav class="p-6 bg-white flex justify-between mb-6">
+        <ul class="flex items-center">
+            <li><a href="" class="p-6">Home</a></li>
+            <li><a href="" class="p-6">Dashboard</a></li>
+            <li><a href="" class="p-6">Post</a></li>
+        </ul>
+        <ul class="flex items-center">
+            <li><a href="" class="p-6">Hi Gab</a></li>
+            <li><a href="" class="p-6">Log in</a></li>
+            <li><a href="" class="p-6">Register</a></li>
+            <li><a href="" class="p-6">Logout</a></li>
         </ul>
     </nav>
     @yield('content')
