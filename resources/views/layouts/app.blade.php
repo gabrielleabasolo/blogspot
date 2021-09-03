@@ -6,8 +6,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>Document</title>
 </head>
-<body class="bg bg-gray-300">
-    <nav class="p-6 bg-white flex justify-between mb-6">
+<body class="bg-gray-300 bg">
+    <nav class="flex justify-between p-6 mb-6 bg-white">
         <ul class="flex items-center">
             <li><a href="" class="p-6">Home</a></li>
             <li><a href="" class="p-6">Dashboard</a></li>
@@ -21,5 +21,6 @@
         </ul>
     </nav>
     @yield('content')
+    
 </body>
 </html>
