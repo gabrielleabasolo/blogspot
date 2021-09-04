@@ -9,13 +9,13 @@
 <body class="bg-gray-300 bg">
     <nav class="flex justify-between p-3 mb-6 bg-white">
         <ul class="flex items-center">
-            <li><a href="" class="p-3">Home</a></li>
+            <li><a href="/" class="p-3">Home</a></li>
             <li><a href="{{ route('dashboard') }}" class="p-3">Dashboard</a></li>
-            <li><a href="" class="p-3">Post</a></li>
+            <li><a href="{{ route('post') }}" class="p-3">Post</a></li>
         </ul>
         <ul class="flex items-center">
             @auth
-            <li><a href="" class="p-3">Hi Gab</a></li>
+            <li><a href="" class="p-3">Hi {{ auth()->user()->name }}</a></li>
             <li>
                 <form action="{{ route('logout') }}" method="post" class="inline">
                     @csrf
