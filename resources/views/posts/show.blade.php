@@ -3,7 +3,7 @@
 @section('content')
     <div class="flex justify-center">
         <div class="w-8/12 p-6 bg-white rounded-lg">
-            Dashboard
+            <x-post :post="$post" />
         </div>
     </div>
 @endsection
